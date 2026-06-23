@@ -1,4 +1,5 @@
 import { useReducer } from "react"
+import ShoppingList from "./ShoppingList";
 
 // 1. 定义 State 的类型
 interface StateType {
@@ -35,10 +36,15 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => dispatch({ type: 'add' })}>;+1</button>
+      {/* <button onClick={() => dispatch({ type: 'add' })}>;+1</button>
       <button onClick={() => dispatch({ type: 'dec' })}>-1</button>
-      <div>{state.count}</div>
+      <div>{state.count}</div> */}
+      <div>
+        <ShoppingList />
+      </div>
     </div>
+
+    
   ) 
 }
 
