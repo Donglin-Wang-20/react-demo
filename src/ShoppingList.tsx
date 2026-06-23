@@ -91,8 +91,8 @@ function ShoppingList() {
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan={4}>总价</td>
-            <td>
+            <td align="center" colSpan={4}>总价</td>
+            <td align="center">
               结算:{' '}
               {data.reduce((prev, next) => {
                 return prev + next.count * next.price
